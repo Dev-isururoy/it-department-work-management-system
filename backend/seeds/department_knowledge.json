@@ -1,0 +1,450 @@
+{
+  "source_file": "IT_Department_Responsibilities.xlsx",
+  "source_sha256": "e933b79916a2bf1a3dff138bc6be364bc6a3b88f2e5f83b0e06f12e9f573118b",
+  "source_sheet": "Responsibilities",
+  "work": [
+    {
+      "id": "work-1",
+      "owner": "Pasan",
+      "work_area": "Clock Time Synchronization",
+      "responsibility": "Check time synchronization of all clocks and complete the relevant records.",
+      "frequency": "Not specified",
+      "review_or_handover": "Isuru: review and sign",
+      "source_row": 6
+    },
+    {
+      "id": "work-2",
+      "owner": "Pasan",
+      "work_area": "Equipment Time Synchronization",
+      "responsibility": "Check time synchronization of all equipment and complete the relevant records.",
+      "frequency": "Not specified",
+      "review_or_handover": "Isuru: review and sign",
+      "source_row": 7
+    },
+    {
+      "id": "work-3",
+      "owner": "Pasan",
+      "work_area": "User Access Management",
+      "responsibility": "Manage user accounts and access for computerized systems, including door access.",
+      "frequency": "Not specified",
+      "review_or_handover": "Isuru: review and sign",
+      "source_row": 8
+    },
+    {
+      "id": "work-4",
+      "owner": "Pasan",
+      "work_area": "Attendance System Access",
+      "responsibility": "Manage employee access and account details in the attendance system used for HR/payroll.",
+      "frequency": "Not specified",
+      "review_or_handover": "",
+      "source_row": 9
+    },
+    {
+      "id": "work-5",
+      "owner": "Pasan",
+      "work_area": "Purchase Request Management",
+      "responsibility": "Prepare purchase request documents when purchases are needed. Update the purchase request register and track progress.",
+      "frequency": "Tuesdays and Fridays, when required",
+      "review_or_handover": "Isuru: purchase request review and Sign",
+      "source_row": 10
+    },
+    {
+      "id": "work-6",
+      "owner": "Pasan",
+      "work_area": "Vendor Coordination",
+      "responsibility": "Coordinate with vendors regarding assigned IT work and system issues.",
+      "frequency": "Not specified",
+      "review_or_handover": "",
+      "source_row": 11
+    },
+    {
+      "id": "work-7",
+      "owner": "Pasan",
+      "work_area": "CCTV Systems",
+      "responsibility": "Install CCTV  and troubleshoot CCTV faults.",
+      "frequency": "Not specified",
+      "review_or_handover": "",
+      "source_row": 12
+    },
+    {
+      "id": "work-8",
+      "owner": "Pasan",
+      "work_area": "Network Support",
+      "responsibility": "Install new network connections and troubleshoot network issues.",
+      "frequency": "Not specified",
+      "review_or_handover": "",
+      "source_row": 13
+    },
+    {
+      "id": "work-9",
+      "owner": "Pasan",
+      "work_area": "Access Control Systems",
+      "responsibility": "Install access control equipments and troubleshoot faults.",
+      "frequency": "Not specified",
+      "review_or_handover": "",
+      "source_row": 14
+    },
+    {
+      "id": "work-10",
+      "owner": "Pasan",
+      "work_area": "Wireless Access Points",
+      "responsibility": "Install wireless access points and troubleshoot connectivity issues.",
+      "frequency": "Not specified",
+      "review_or_handover": "",
+      "source_row": 15
+    },
+    {
+      "id": "work-11",
+      "owner": "Pasan",
+      "work_area": "Synchronized Clock Systems",
+      "responsibility": "Install synchronized clocks and troubleshoot clock-system faults.",
+      "frequency": "Not specified",
+      "review_or_handover": "",
+      "source_row": 16
+    },
+    {
+      "id": "work-12",
+      "owner": "Pasan",
+      "work_area": "eQMS Implementation Support",
+      "responsibility": "Support the eQMS demo/implementation, attend relevant training, and troubleshoot system issues.",
+      "frequency": "Not specified",
+      "review_or_handover": "",
+      "source_row": 17
+    },
+    {
+      "id": "work-13",
+      "owner": "Pasan",
+      "work_area": "PABX Speed Dial",
+      "responsibility": "Create and maintain PABX speed-dial entries and troubleshoot related issues.",
+      "frequency": "Not specified",
+      "review_or_handover": "",
+      "source_row": 18
+    },
+    {
+      "id": "work-14",
+      "owner": "Wathsala",
+      "work_area": "SOP Review",
+      "responsibility": "Review documents or selected sections and record errors and corrections required.",
+      "frequency": "Not specified",
+      "review_or_handover": "",
+      "source_row": 19
+    },
+    {
+      "id": "work-15",
+      "owner": "Wathsala",
+      "work_area": "Audit Trail Review",
+      "responsibility": "Check system audit trails and complete the relevant review records.",
+      "frequency": "Monthly",
+      "review_or_handover": "Isuru: review and sign",
+      "source_row": 20
+    },
+    {
+      "id": "work-16",
+      "owner": "Wathsala",
+      "work_area": "IT Documentation",
+      "responsibility": "Prepare and maintain IT documentation, including risk assessments, change controls, deviations, and CAPA records.",
+      "frequency": "Not specified",
+      "review_or_handover": "",
+      "source_row": 21
+    },
+    {
+      "id": "work-17",
+      "owner": "Wathsala",
+      "work_area": "ERP Documentation Support",
+      "responsibility": "Attend ERP meetings and manage the related documentation.",
+      "frequency": "Not specified",
+      "review_or_handover": "",
+      "source_row": 22
+    },
+    {
+      "id": "work-18",
+      "owner": "Thilakshana",
+      "work_area": "Fixed Asset Records",
+      "responsibility": "Maintain fixed asset records for network switches, servers, desktops, laptops, printers, and other IT equipment.",
+      "frequency": "Not specified",
+      "review_or_handover": "",
+      "source_row": 23
+    },
+    {
+      "id": "work-19",
+      "owner": "Thilakshana",
+      "work_area": "ERP Data Upload Support",
+      "responsibility": "Attend ERP meetings and coordinate data uploads with vendor assistance.",
+      "frequency": "Not specified",
+      "review_or_handover": "",
+      "source_row": 24
+    },
+    {
+      "id": "work-20",
+      "owner": "Thilakshana",
+      "work_area": "Electronic Waste Management",
+      "responsibility": "Manage electronic waste and complete the relevant documentation.",
+      "frequency": "Monthly",
+      "review_or_handover": "",
+      "source_row": 25
+    },
+    {
+      "id": "work-21",
+      "owner": "Thilakshana",
+      "work_area": "Computerized-System Periodic Checks",
+      "responsibility": "Perform periodic checks of all computerized systems and complete the relevant records.",
+      "frequency": "Monthly",
+      "review_or_handover": "Isuru: review and sign",
+      "source_row": 26
+    },
+    {
+      "id": "work-22",
+      "owner": "Thilakshana",
+      "work_area": "Printer Management",
+      "responsibility": "Maintain printer inventory, resolve faults, and coordinate with rented vendors. Check monthly rental bills for rented black-and-white printers.",
+      "frequency": "Monthly: printer count  readings and bills",
+      "review_or_handover": "",
+      "source_row": 27
+    },
+    {
+      "id": "work-23",
+      "owner": "Thilakshana",
+      "work_area": "Server-Room Temperature and RH",
+      "responsibility": "Check and record server-room temperature and relative humidity (RH).",
+      "frequency": "Daily",
+      "review_or_handover": "Isuru: review and sign",
+      "source_row": 28
+    },
+    {
+      "id": "work-24",
+      "owner": "Thilakshana",
+      "work_area": "Manual Backup Collection",
+      "responsibility": "Collect manual backups and hand them over to Isuru.",
+      "frequency": "Weekly",
+      "review_or_handover": "Handover to Isuru",
+      "source_row": 29
+    },
+    {
+      "id": "work-25",
+      "owner": "Thilakshana",
+      "work_area": "Vendor Coordination",
+      "responsibility": "Coordinate with vendors to address system issues.",
+      "frequency": "Not specified",
+      "review_or_handover": "",
+      "source_row": 30
+    },
+    {
+      "id": "work-26",
+      "owner": "Thilakshana",
+      "work_area": "CCTV Systems",
+      "responsibility": "Install and repair CCTV equipment and troubleshoot faults.",
+      "frequency": "Not specified",
+      "review_or_handover": "",
+      "source_row": 31
+    },
+    {
+      "id": "work-27",
+      "owner": "Thilakshana",
+      "work_area": "Network Support",
+      "responsibility": "Install new network connections and troubleshoot network issues.",
+      "frequency": "Not specified",
+      "review_or_handover": "",
+      "source_row": 32
+    },
+    {
+      "id": "work-28",
+      "owner": "Thilakshana",
+      "work_area": "IP Telephone and PABX Systems",
+      "responsibility": "Install IP/PABX telephones and troubleshoot telephone-system faults.",
+      "frequency": "Not specified",
+      "review_or_handover": "",
+      "source_row": 33
+    },
+    {
+      "id": "work-29",
+      "owner": "Thilakshana",
+      "work_area": "HRIS/HRMS Support",
+      "responsibility": "Coordinate with PBSS and perform basic HRIS/HRMS troubleshooting.",
+      "frequency": "Not specified",
+      "review_or_handover": "",
+      "source_row": 34
+    },
+    {
+      "id": "work-30",
+      "owner": "Isuru",
+      "work_area": "Manual Backup Records",
+      "responsibility": "Complete and maintain manual backup documentation and records.",
+      "frequency": "Weekly",
+      "review_or_handover": "",
+      "source_row": 35
+    },
+    {
+      "id": "work-31",
+      "owner": "Isuru",
+      "work_area": "Veeam Backup Records",
+      "responsibility": "Complete and maintain documentation and records for automatic backups performed through Veeam.",
+      "frequency": "Weekly",
+      "review_or_handover": "",
+      "source_row": 36
+    },
+    {
+      "id": "work-32",
+      "owner": "Isuru",
+      "work_area": "Preventive Maintenance",
+      "responsibility": "Assign team members to preventive maintenance for desktops, laptops, servers, NVRs, and NAS devices, and complete the related documentation.",
+      "frequency": "To be confirmed: draft states \"weekly x 4\"",
+      "review_or_handover": "",
+      "source_row": 37
+    },
+    {
+      "id": "work-33",
+      "owner": "Isuru",
+      "work_area": "Purchase Request Review",
+      "responsibility": "Review purchase requests prepared by the team.",
+      "frequency": "Not specified",
+      "review_or_handover": "",
+      "source_row": 38
+    },
+    {
+      "id": "work-34",
+      "owner": "Isuru",
+      "work_area": "Backup Archival",
+      "responsibility": "Perform backup archival activities and complete the relevant documentation.",
+      "frequency": "Weekly",
+      "review_or_handover": "",
+      "source_row": 39
+    },
+    {
+      "id": "work-35",
+      "owner": "Isuru",
+      "work_area": "Backup Restoration",
+      "responsibility": "Perform backup restoration activities and complete the relevant documentation.",
+      "frequency": "Weekly",
+      "review_or_handover": "",
+      "source_row": 40
+    },
+    {
+      "id": "work-36",
+      "owner": "Isuru",
+      "work_area": "Vendor Coordination",
+      "responsibility": "Coordinate with all IT vendors.",
+      "frequency": "Not specified",
+      "review_or_handover": "",
+      "source_row": 41
+    },
+    {
+      "id": "work-37",
+      "owner": "Isuru",
+      "work_area": "CCTV Systems",
+      "responsibility": "Install CCTV equipment and troubleshoot faults.",
+      "frequency": "Not specified",
+      "review_or_handover": "",
+      "source_row": 42
+    },
+    {
+      "id": "work-38",
+      "owner": "Isuru",
+      "work_area": "Network Support",
+      "responsibility": "Install network connections and troubleshoot network issues.",
+      "frequency": "Not specified",
+      "review_or_handover": "",
+      "source_row": 43
+    },
+    {
+      "id": "work-39",
+      "owner": "Isuru",
+      "work_area": "Server Administration",
+      "responsibility": "Install and administer servers and troubleshoot server issues.",
+      "frequency": "Not specified",
+      "review_or_handover": "",
+      "source_row": 44
+    },
+    {
+      "id": "work-40",
+      "owner": "Isuru",
+      "work_area": "Bitdefender Security Records",
+      "responsibility": "Complete and maintain Bitdefender malware/security and documentation.",
+      "frequency": "Weekly",
+      "review_or_handover": "",
+      "source_row": 45
+    },
+    {
+      "id": "work-41",
+      "owner": "Isuru",
+      "work_area": "BMS Support",
+      "responsibility": "Monitor the BMS, resolve software-related issues, and coordinate with the BMS vendor.",
+      "frequency": "Not specified",
+      "review_or_handover": "",
+      "source_row": 46
+    },
+    {
+      "id": "work-42",
+      "owner": "Isuru",
+      "work_area": "SOP and Document Review",
+      "responsibility": "Review SOPs and related documentation within the required review periods.",
+      "frequency": "Within required review periods",
+      "review_or_handover": "",
+      "source_row": 47
+    },
+    {
+      "id": "work-43",
+      "owner": "Isuru",
+      "work_area": "Roster and Leave Management",
+      "responsibility": "Prepare the team roster and review and approve leave requests.",
+      "frequency": "Not specified",
+      "review_or_handover": "",
+      "source_row": 48
+    }
+  ],
+  "reviews": [
+    {
+      "id": "review-1",
+      "owner": "Isuru",
+      "work_area": "Clock Time Synchronization",
+      "responsibility": "Review the completed clock synchronization records and sign the Reviewed By section.",
+      "frequency": "Not specified",
+      "review_or_handover": "Pasan",
+      "source_row": 54
+    },
+    {
+      "id": "review-2",
+      "owner": "Isuru",
+      "work_area": "Equipment Time Synchronization",
+      "responsibility": "Review the completed equipment synchronization records and sign the Reviewed By section.",
+      "frequency": "Not specified",
+      "review_or_handover": "Pasan",
+      "source_row": 55
+    },
+    {
+      "id": "review-3",
+      "owner": "Isuru",
+      "work_area": "User Access Management",
+      "responsibility": "Review computerized-system/access-management records and sign the Reviewed By section.",
+      "frequency": "Not specified",
+      "review_or_handover": "Pasan",
+      "source_row": 56
+    },
+    {
+      "id": "review-4",
+      "owner": "Isuru",
+      "work_area": "Audit Trail Review",
+      "responsibility": "Review the completed audit trail check records and sign the Reviewed By section.",
+      "frequency": "Monthly",
+      "review_or_handover": "Wathsala",
+      "source_row": 57
+    },
+    {
+      "id": "review-5",
+      "owner": "Isuru",
+      "work_area": "Computerized-System Periodic Checks",
+      "responsibility": "Review the completed periodic check records and sign the Reviewed By section.",
+      "frequency": "Monthly",
+      "review_or_handover": "Thilakshana",
+      "source_row": 58
+    },
+    {
+      "id": "review-6",
+      "owner": "Isuru",
+      "work_area": "Server-Room Temperature and RH",
+      "responsibility": "Review the completed temperature/RH records and sign the Reviewed By section.",
+      "frequency": "Daily",
+      "review_or_handover": "Thilakshana",
+      "source_row": 59
+    }
+  ]
+}

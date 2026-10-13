@@ -1,0 +1,31 @@
+.venv/
+__pycache__/
+.pytest_cache/
+data/
+.env
+*.log
+node_modules/
+android/.gradle/
+android/local.properties
+android/**/build/
+backups/
+test-results/
+
+# Local exports, scratch files, and unrelated generated documents
+delivery/
+tmp/
+output/
+outputs/
+
+# Private configuration and runtime data
+.env.*
+!.env.example
+*.sqlite3
+*.sqlite3-*
+*.db
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore

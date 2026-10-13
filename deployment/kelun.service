@@ -1,0 +1,18 @@
+[Unit]
+Description=Kelun IT Work Manager
+After=network.target
+
+[Service]
+Type=simple
+User=kelun
+WorkingDirectory=/opt/kelun
+EnvironmentFile=/opt/kelun/.env
+ExecStart=/opt/kelun/.venv/bin/python -m backend.run
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

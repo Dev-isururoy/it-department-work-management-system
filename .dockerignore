@@ -1,0 +1,9 @@
+.venv
+data
+backups
+.env
+.git
+android
+tests
+test-results
+node_modules

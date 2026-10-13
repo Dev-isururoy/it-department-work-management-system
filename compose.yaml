@@ -1,0 +1,22 @@
+services:
+  app:
+    build: .
+    restart: unless-stopped
+    environment:
+      DATA_DIR: /data
+      HOST: 0.0.0.0
+      ALLOWED_HOSTS: ${ALLOWED_HOSTS:-localhost,127.0.0.1}
+      PUBLIC_ORIGIN: ${PUBLIC_ORIGIN:-http://127.0.0.1:8000}
+      COOKIE_SECURE: ${COOKIE_SECURE:-false}
+      MAX_UPLOAD_MB: ${MAX_UPLOAD_MB:-20}
+      AI_PROVIDER: ${AI_PROVIDER:-disabled}
+      AI_MODEL: ${AI_MODEL:-}
+      AI_BASE_URL: ${AI_BASE_URL:-http://host.docker.internal:11434}
+      AI_EXTERNAL_ENABLED: ${AI_EXTERNAL_ENABLED:-false}
+      AI_API_KEY: ${AI_API_KEY:-}
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - kelun-data:/data
+volumes:
+  kelun-data:

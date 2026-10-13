@@ -1,0 +1,410 @@
+[
+  {
+    "title": "Clock time synchronization checks and records",
+    "owner_name": "Pasan",
+    "frequency": "Unconfigured",
+    "review_required": true,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Equipment time synchronization checks and records",
+    "owner_name": "Pasan",
+    "frequency": "Unconfigured",
+    "review_required": true,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Computerized-system user access management",
+    "owner_name": "Pasan",
+    "frequency": "Unconfigured",
+    "review_required": true,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Door/access-control user management",
+    "owner_name": "Pasan",
+    "frequency": "Unconfigured",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Attendance/payroll system user access management",
+    "owner_name": "Pasan",
+    "frequency": "Unconfigured",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Purchase request preparation, documentation, register updates, and follow-up",
+    "owner_name": "Pasan",
+    "frequency": "Unconfigured",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Purchase request preparation/check when purchases are needed",
+    "owner_name": "Pasan",
+    "frequency": "Tuesday, Friday",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Vendor coordination",
+    "owner_name": "Pasan",
+    "frequency": "Unconfigured",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "CCTV installation and troubleshooting",
+    "owner_name": "Pasan",
+    "frequency": "Unconfigured",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Network installation and troubleshooting",
+    "owner_name": "Pasan",
+    "frequency": "Unconfigured",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Access-control installation and troubleshooting",
+    "owner_name": "Pasan",
+    "frequency": "Unconfigured",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Access-point installation and troubleshooting",
+    "owner_name": "Pasan",
+    "frequency": "Unconfigured",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Synchronized-clock installation and troubleshooting",
+    "owner_name": "Pasan",
+    "frequency": "Unconfigured",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "eQMS implementation support, training, and troubleshooting",
+    "owner_name": "Pasan",
+    "frequency": "Unconfigured",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "PABX speed-dial creation, management, and troubleshooting",
+    "owner_name": "Pasan",
+    "frequency": "Unconfigured",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "SOP reviews and recording corrections required",
+    "owner_name": "Wathsala",
+    "frequency": "Unconfigured",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Audit trail checks",
+    "owner_name": "Wathsala",
+    "frequency": "monthly",
+    "review_required": true,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Documentation for risk assessments, change controls, deviations, and CAPA",
+    "owner_name": "Wathsala",
+    "frequency": "Unconfigured",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "ERP meetings and documentation",
+    "owner_name": "Wathsala",
+    "frequency": "Unconfigured",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Fixed asset records for switches, servers, desktops, laptops, printers, and other IT equipment",
+    "owner_name": "Thilakshana",
+    "frequency": "Unconfigured",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "ERP meetings and data uploads with vendor assistance",
+    "owner_name": "Thilakshana",
+    "frequency": "Unconfigured",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Electronic waste review and documentation",
+    "owner_name": "Thilakshana",
+    "frequency": "monthly",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Computerized-system periodic checks and records",
+    "owner_name": "Thilakshana",
+    "frequency": "monthly",
+    "review_required": true,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Printer inventory, faults, vendors, and bills",
+    "owner_name": "Thilakshana",
+    "frequency": "Unconfigured",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Rental-printer meter readings and bill checks",
+    "owner_name": "Thilakshana",
+    "frequency": "monthly",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Server-room temperature and relative humidity readings and records",
+    "owner_name": "Thilakshana",
+    "frequency": "daily",
+    "review_required": true,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Manual backup collection and handover to Isuru",
+    "owner_name": "Thilakshana",
+    "frequency": "weekly",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Vendor coordination for system issues",
+    "owner_name": "Thilakshana",
+    "frequency": "Unconfigured",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "CCTV installation and troubleshooting",
+    "owner_name": "Thilakshana",
+    "frequency": "Unconfigured",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Network installation and troubleshooting",
+    "owner_name": "Thilakshana",
+    "frequency": "Unconfigured",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "IP telephone/PABX installation and troubleshooting",
+    "owner_name": "Thilakshana",
+    "frequency": "Unconfigured",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "HRIS/HRMS support and PBSS vendor coordination",
+    "owner_name": "Thilakshana",
+    "frequency": "Unconfigured",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Manual backup documentation",
+    "owner_name": "Isuru",
+    "frequency": "weekly",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Veeam automatic backup documentation",
+    "owner_name": "Isuru",
+    "frequency": "weekly",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Preventive maintenance coordination and documentation for desktops, laptops, servers, NVRs, and NAS devices",
+    "owner_name": "Isuru",
+    "frequency": "Unconfigured",
+    "review_required": false,
+    "notes": "Clarification required: weekly \u00d7 4 is ambiguous; schedule remains unconfigured.",
+    "schedule_id": ""
+  },
+  {
+    "title": "Purchase request review",
+    "owner_name": "Isuru",
+    "frequency": "Unconfigured",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Backup archival work and documentation",
+    "owner_name": "Isuru",
+    "frequency": "weekly",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Backup restoration work and documentation",
+    "owner_name": "Isuru",
+    "frequency": "weekly",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Vendor coordination",
+    "owner_name": "Isuru",
+    "frequency": "Unconfigured",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "CCTV and network work",
+    "owner_name": "Isuru",
+    "frequency": "Unconfigured",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Server administration",
+    "owner_name": "Isuru",
+    "frequency": "Unconfigured",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Bitdefender security/malware records",
+    "owner_name": "Isuru",
+    "frequency": "weekly",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "BMS monitoring, software support, and vendor coordination",
+    "owner_name": "Isuru",
+    "frequency": "Unconfigured",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "SOP/document reviews",
+    "owner_name": "Isuru",
+    "frequency": "Unconfigured",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Roster preparation and leave approvals",
+    "owner_name": "Isuru",
+    "frequency": "Unconfigured",
+    "review_required": false,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Review of clock time synchronization records",
+    "owner_name": "Isuru",
+    "frequency": "Unconfigured",
+    "review_required": true,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Review of equipment time synchronization records",
+    "owner_name": "Isuru",
+    "frequency": "Unconfigured",
+    "review_required": true,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Review of computerized-system user access records",
+    "owner_name": "Isuru",
+    "frequency": "Unconfigured",
+    "review_required": true,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Review of monthly audit trail checks",
+    "owner_name": "Isuru",
+    "frequency": "monthly",
+    "review_required": true,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Review of monthly periodic checks",
+    "owner_name": "Isuru",
+    "frequency": "monthly",
+    "review_required": true,
+    "notes": "",
+    "schedule_id": ""
+  },
+  {
+    "title": "Review of daily server-room temperature/RH records",
+    "owner_name": "Isuru",
+    "frequency": "daily",
+    "review_required": true,
+    "notes": "",
+    "schedule_id": ""
+  }
+]

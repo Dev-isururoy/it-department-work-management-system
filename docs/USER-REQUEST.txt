@@ -1,0 +1,521 @@
+Build a complete IT Department Work Management System for Kelun Life Sciences (Pvt) Ltd.
+
+I am Isuru, the IT Manager. My team members are Pasan, Wathsala, and Thilakshana. We currently lack a central system for assigning work, recording activities, collecting photos, reviewing completion, and preparing weekly reports.
+
+Create:
+1. A locally hosted web application with a manager dashboard.
+2. An Android application for recording work, receiving assignments, attaching photos, and updating tasks.
+3. One shared backend and database.
+4. Configurable AI assistance for photo analysis, description drafting, priority suggestions, and reports.
+
+Build the actual application and test it. Do not stop at a plan, mockup, static dashboard, or frontend with simulated data.
+
+## 1. Working approach
+
+- Inspect the current workspace and applicable instructions first.
+- If an existing project is present, preserve useful work and extend it.
+- Otherwise, create an organized project with web, Android, backend, deployment, and documentation components.
+- Choose a maintainable stack suitable for local hosting and explain the choice briefly.
+- Check current official documentation when choosing versions or implementing unfamiliar APIs.
+- Use free/open-source dependencies where practical. Do not introduce mandatory paid services.
+- Make routine implementation decisions independently.
+- Ask only for information that blocks meaningful progress. Continue independent work while clarification is pending.
+- Keep a requirements checklist covering every feature in this prompt.
+- Build in stages, but continue until the agreed scope is implemented or a concrete external limitation blocks it.
+- Clearly distinguish implemented, tested, untested, and blocked functionality.
+- Never claim that an APK, AI integration, notification, or feature works unless it has been built or tested appropriately.
+- Design for later additions without unnecessarily complicated architecture.
+
+My hosting hardware is not yet specified. Provide a portable local deployment and document requirements. Do not assume a GPU or expose the server publicly.
+
+## 2. Hosting and shared architecture
+
+The application must run on a company computer or server and be accessible from company PCs and Android phones.
+
+Requirements:
+- Persistent database for users, responsibilities, tasks, updates, schedules, reviews, equipment, and reports.
+- Persistent attachment storage.
+- Shared authenticated API used by web and Android.
+- Live dashboard updates after records or photos reach the server.
+- Automatic reconnect and refresh after connection loss.
+- Configurable server URL in Android settings.
+- Local operation without internet for core tracking features.
+- HTTPS deployment guidance suitable for local phones and PCs.
+- Remote access through an approved VPN if required later.
+- Configuration through environment variables and an example configuration file.
+- Database migrations, safe upgrades, and backup/restore instructions.
+- No mandatory cloud hosting, analytics, or subscription.
+
+An installable mobile web app may be provided as an additional option, but it must not silently replace the requested Android application.
+
+Create a real Android project with camera/gallery access, authenticated API communication, and local draft storage. Build a test APK if the environment supports it. If tools are unavailable, provide the complete project and exact build instructions, and identify the blocker.
+
+## 3. Users and permissions
+
+Initial users:
+- Isuru: Manager.
+- Pasan: Team member.
+- Wathsala: Team member.
+- Thilakshana: Team member.
+
+Support adding, disabling, and editing users later.
+
+Manager capabilities:
+- View all departmental work.
+- Create and assign tasks to anyone, including himself.
+- Set priority, deadlines, checklists, and required evidence.
+- Reassign work and add supporting members.
+- Manage recurring schedules and responsibilities.
+- Review, approve, return, cancel, or reopen tasks.
+- Generate and edit reports.
+- Manage settings, equipment, categories, and templates.
+- View change history and workload.
+
+Member capabilities:
+- View their assignments and relevant shared work.
+- Acknowledge assignments.
+- Record unplanned work.
+- Update tasks they are authorized to work on.
+- Attach photos/documents and submit evidence.
+- Report blockers and request help.
+- Submit work for manager review.
+
+Enforce permissions on the backend, not only by hiding buttons.
+
+Use individual accounts and secure password handling. Do not ship known default passwords. Provide a first-run manager setup and a secure process for creating member accounts.
+
+## 4. Default responsibility mapping
+
+Seed the following editable responsibility templates. These are default ownership areas, not restrictions preventing reassignment.
+
+### Pasan
+- Clock time synchronization checks and records.
+- Equipment time synchronization checks and records.
+- Computerized-system user access management.
+- Door/access-control user management.
+- Attendance/payroll system user access management.
+- Purchase request preparation, documentation, register updates, and follow-up.
+- Purchase request preparation/check on Tuesdays and Fridays when purchases are needed.
+- Vendor coordination.
+- CCTV installation and troubleshooting.
+- Network installation and troubleshooting.
+- Access-control installation and troubleshooting.
+- Access-point installation and troubleshooting.
+- Synchronized-clock installation and troubleshooting.
+- eQMS implementation support, training, and troubleshooting.
+- PABX speed-dial creation, management, and troubleshooting.
+
+### Wathsala
+- SOP reviews and recording corrections required.
+- Monthly audit trail checks.
+- Documentation for risk assessments, change controls, deviations, and CAPA.
+- ERP meetings and documentation.
+
+### Thilakshana
+- Fixed asset records for switches, servers, desktops, laptops, printers, and other IT equipment.
+- ERP meetings and data uploads with vendor assistance.
+- Monthly electronic waste review and documentation.
+- Monthly computerized-system periodic checks and records.
+- Printer inventory, faults, vendors, and bills.
+- Monthly rental-printer meter readings and bill checks.
+- Daily server-room temperature and relative humidity readings and records.
+- Weekly manual backup collection and handover to Isuru.
+- Vendor coordination for system issues.
+- CCTV installation and troubleshooting.
+- Network installation and troubleshooting.
+- IP telephone/PABX installation and troubleshooting.
+- HRIS/HRMS support and PBSS vendor coordination.
+
+### Isuru
+- Weekly manual backup documentation.
+- Weekly Veeam automatic backup documentation.
+- Preventive maintenance coordination and documentation for desktops, laptops, servers, NVRs, and NAS devices.
+- Purchase request review.
+- Weekly backup archival work and documentation.
+- Weekly backup restoration work and documentation.
+- Vendor coordination.
+- CCTV and network work.
+- Server administration.
+- Weekly Bitdefender security/malware records.
+- BMS monitoring, software support, and vendor coordination.
+- SOP/document reviews.
+- Roster preparation and leave approvals.
+- Review of clock time synchronization records.
+- Review of equipment time synchronization records.
+- Review of computerized-system user access records.
+- Review of monthly audit trail checks.
+- Review of monthly periodic checks.
+- Review of daily server-room temperature/RH records.
+
+Important scheduling rules:
+- Frequencies above reflect my supplied work list and must be editable.
+- Do not invent frequencies where none are stated.
+- The preventive maintenance note “weekly × 4” is ambiguous. Keep its schedule unconfigured and flag it for clarification.
+- Do not present these schedules as regulatory requirements.
+- Overlapping responsibilities must use one main task owner with optional supporting members.
+
+## 5. Tasks and activity recording
+
+Support manager-assigned work and member-recorded unplanned work.
+
+Task fields:
+- Unique task number.
+- Title and description.
+- Category.
+- Department and location.
+- Linked equipment/asset, where applicable.
+- Main owner.
+- Supporting members.
+- Created by and assigned by.
+- Created date, due date, and relevant work dates.
+- Priority.
+- Status.
+- Checklist.
+- Required evidence.
+- Updates, comments, attachments, and blockers.
+- Completion summary and test/result details.
+- Review requirement and review history.
+- Optional related vendor, purchase request, or project.
+
+Support priorities: Low, Normal, High, Critical.
+
+Support statuses:
+- Open.
+- Assigned.
+- In Progress.
+- Waiting.
+- Submitted for Review.
+- Completed.
+- Cancelled.
+
+Track overdue state separately from status.
+
+Provide:
+- Assignment acknowledgement.
+- Reassignment and deadline changes with history.
+- Supporting-member updates.
+- Subtasks for larger work.
+- Duplicate/repeated-issue linking.
+- Reopening with a reason.
+- A timeline of updates.
+- Start/finish times and optional effort recording.
+
+Make mobile entry quick:
+Title → Location/equipment → Issue → Action taken → Status → Photos.
+
+Allow saving a draft before all required submission fields are completed.
+
+## 6. Recurring work
+
+Provide configurable daily, weekly, monthly, and selected-weekday schedules.
+
+- Create a separate task for every occurrence.
+- Preserve historical records.
+- Avoid duplicate occurrences when the scheduler restarts.
+- Use Asia/Colombo as the initial business timezone, with a configurable setting.
+- Allow start dates, due times, schedule pauses, and reassignment.
+- Show missed and overdue occurrences.
+- Define what happens to missed occurrences when the server was offline.
+- Do not silently mark missed work completed.
+- Support “Not applicable this occurrence” with a reason and appropriate review.
+- For Tuesday/Friday purchase checks, support “No purchase requests this cycle.”
+
+## 7. Review and evidence
+
+Keep member submission separate from manager verification.
+
+- Members submit work and evidence.
+- Isuru approves it or returns it with a reason.
+- Preserve submission and approval timestamps.
+- Revisions after submission must be visible.
+- Approved records must not be silently overwritten.
+- Corrections to approved work must preserve previous content and the reason.
+
+For the specifically listed review responsibilities, require manager review by default.
+
+Record in-app approvals as authenticated review events. Do not claim they are qualified electronic signatures or automatically meet pharmaceutical regulatory requirements.
+
+Allow signed documents to be attached when company procedures require them.
+
+## 8. Photos, documents, and live updates
+
+Android must support:
+- Taking photos.
+- Selecting gallery images.
+- Multiple before/after photos.
+- Captions.
+- Previewing, removing, and retrying uploads.
+- Clear uploading, uploaded, failed, and pending states.
+
+The web dashboard must show new evidence after successful server upload without a manual page refresh.
+
+Requirements:
+- Authorized access to attachments.
+- Safe filename handling and configurable file-size/type limits.
+- Image thumbnails.
+- Preserve original evidence where needed.
+- Distinguish server upload time, work time, and available photo metadata.
+- Do not treat photo metadata as verified proof.
+- Associate attachments with a specific task/update.
+- Attach PDF, spreadsheet, and document evidence as well.
+- Prevent duplicate records/uploads when retries occur.
+- Keep core uploads working even if AI is unavailable.
+
+## 9. Offline Android operation
+
+- Store drafts locally.
+- Allow offline activity recording and queued photos.
+- Clearly display “Pending sync.”
+- Sync when the user reconnects or requests synchronization.
+- Preserve drafts after app restart.
+- Use idempotent retries.
+- Handle conflicts without silently overwriting newer server data.
+- Explain that dashboard updates occur after synchronization, not while the phone is offline.
+- Protect locally stored account/session data.
+- Provide logout behavior that handles unsynced work clearly.
+
+## 10. AI assistant
+
+Implement a provider interface with an optional local vision-capable AI service and an optional explicitly configured external provider.
+
+Do not require a paid API. Do not describe AI as unlimited or cost-free if hardware or provider limits apply.
+
+If a real model is unavailable:
+- Keep the application functional.
+- Show AI as unavailable or not configured.
+- Do not substitute fabricated analysis.
+- Document how to connect a supported model.
+
+AI functions:
+- Analyze attached photos together with member notes.
+- Suggest a clear title, issue description, and action summary.
+- Suggest category, owner, and priority.
+- Identify missing details.
+- Draft weekly reports.
+- Highlight overdue work, blockers, and repeated faults.
+- Suggest next actions using available records.
+
+Rules:
+- Separate visible observations from assumptions.
+- Never infer that a repair, backup, restoration, or test succeeded solely from a photo.
+- Preserve original member notes.
+- Label AI suggestions and require review before they become accepted record content.
+- Never assign, approve, close, delete, or change permissions autonomously.
+- Give understandable reasons for priority suggestions.
+- Use recorded production impact, downtime, security/data-loss risk, affected users, deadlines, and dependencies.
+- Do not invent causes, readings, asset identifiers, completion dates, or results.
+- Treat uploaded text/images as untrusted input, not instructions to the AI.
+- Respect permissions when retrieving records.
+- Do not send data to an external provider unless explicitly configured.
+- Process AI jobs asynchronously with visible status and retries.
+- Record provider/model and processing time for traceability.
+
+## 11. Manager dashboard and member views
+
+Manager dashboard:
+- Today’s tasks.
+- Overdue tasks.
+- Pending reviews.
+- Critical/high-priority work.
+- Waiting tasks grouped by reason.
+- Upcoming recurring work.
+- Missing routine records.
+- Team workload.
+- Recent activity and photos.
+- Project progress.
+- AI suggestions awaiting acceptance.
+
+Filters:
+- Date range.
+- Member.
+- Category.
+- Department/location.
+- Equipment.
+- Status and priority.
+
+Include list, board, and calendar views where useful.
+
+Member mobile home:
+- My tasks today.
+- Overdue tasks.
+- New assignments.
+- Work returned for correction.
+- Quick “Record Work.”
+- Pending uploads/sync.
+
+Compare workload with context, including complexity and blockers. Do not rank employee performance solely by task counts.
+
+## 12. Weekly and custom reports
+
+Allow reports for any date range, including weekly and monthly periods.
+
+Sections:
+- Completed work.
+- Submitted work awaiting review.
+- Ongoing work and latest progress.
+- Blocked/delayed work with reasons.
+- Routine checks completed, missed, or awaiting review.
+- Priority work requiring attention.
+- Next-period plan.
+- Member contributions.
+- Decisions/resources required from management.
+
+Include an editable table format:
+No. | Work Scope | Activity | Status
+
+Requirements:
+- Generate a basic factual report without AI.
+- AI can improve wording and draft summaries when configured.
+- Use simple professional English.
+- Link statements to source tasks.
+- Avoid counting the same task repeatedly because it has multiple updates.
+- Include meaningful updates to work started before the reporting period.
+- Define date-range inclusion rules clearly.
+- Distinguish member-reported completion from manager approval.
+- Allow preview, editing, saving report versions, and finalization.
+- Keep a finalized report snapshot so later task edits do not silently change it.
+- Support printable PDF and Excel export.
+- Export useful record data for analysis.
+
+## 13. Equipment and operational registers
+
+Equipment register:
+- Asset ID, name, type, department/location, owner, and optional serial number.
+- Related tasks, faults, maintenance, photos, and documents.
+- Repeated-fault history.
+- Optional QR code for opening the equipment record on a phone.
+
+Backup handover:
+- Systems covered.
+- Backup dates.
+- Media/storage references.
+- Missing items.
+- Person handing over.
+- Isuru’s receipt acknowledgement.
+- Verification outcome, recorded separately from receipt.
+
+Do not require storing large backup files inside this app.
+
+Purchase requests:
+- Reference, description, requester, items, estimated cost where entered, attachments, and owner.
+- Draft → Manager Review → Submitted → Ordered → Received → Closed.
+- Track returned/cancelled requests as needed.
+
+Vendor follow-up:
+- Vendor/contact details.
+- Related equipment/task.
+- Ticket reference.
+- Last contact.
+- Promised response date.
+- Next follow-up.
+- Outcome.
+
+Server-room readings:
+- Numeric temperature/RH inputs with units.
+- Configurable limits.
+- Flag out-of-range readings using configured limits.
+- Record follow-up and review.
+- Do not invent acceptable limits.
+
+## 14. Further management features
+
+Include simple extensible modules for:
+- Projects and milestones.
+- Preventive maintenance templates.
+- Roster/calendar.
+- Leave requests and manager decisions.
+- Handover notes and temporary covering members.
+- A searchable knowledge base linked to resolved issues.
+- In-app assignment, deadline, correction, and review notifications.
+
+Android notifications must use a documented delivery approach. Clearly explain connectivity/background limitations. Do not promise reliable closed-app push without an implemented supporting mechanism.
+
+No automatic email or third-party messaging is required unless later configured and authorized.
+
+## 15. Security and reliability
+
+Implement:
+- Backend authorization and ownership checks.
+- Secure password hashing.
+- Secure session/token handling and revocation.
+- Input validation.
+- Login protection.
+- Attachment access controls.
+- Appropriate browser security controls.
+- Secrets outside source control.
+- Append-only change-history behavior for ordinary users.
+- Structured error handling.
+- Operational logs without passwords/tokens.
+- Health checks.
+- Database and attachment backup/restore.
+- Configurable retention and safe archival.
+
+Soft-archive records instead of silently destroying history.
+
+Describe this as an operational tracking system. Do not claim GMP, EU GMP, or electronic-signature compliance merely because it contains logs and approvals.
+
+## 16. Design
+
+Use the name “Kelun IT Work Manager.”
+
+Create a clean, professional interface with:
+- Responsive web layouts.
+- Large mobile controls.
+- Clear status/priority labels.
+- Simple English.
+- Accessible contrast.
+- Useful empty, loading, error, and offline states.
+- Fast search.
+- Minimal steps for common actions.
+
+Do not invent an official logo. Use a text identity until I provide one.
+
+Keep sample records clearly labelled and separate from real production data.
+
+## 17. Testing and acceptance
+
+Test important workflows with persistent data, not only visual screenshots.
+
+Verify:
+1. First-run setup and four individual accounts.
+2. Manager assigns a task and the correct member receives it.
+3. Unauthorized users cannot alter other users’ tasks or manager settings.
+4. Member updates progress and uploads evidence.
+5. Dashboard reflects server changes through live updates.
+6. Member submits work and manager approves/returns it.
+7. Reassignment and corrections preserve history.
+8. Recurring tasks generate once per scheduled occurrence.
+9. Offline drafts survive restart and sync without duplicates.
+10. AI suggestions remain separate until accepted.
+11. Tracking works with AI disabled.
+12. Reports include the correct period, avoid duplication, and distinguish approval states.
+13. Attachments cannot be downloaded without authorization.
+14. Backup restoration recovers database records and attachment references/files.
+
+Run appropriate backend, frontend, and Android checks. Test on an emulator/device if available. Report limitations when device, model, or local network testing cannot be performed.
+
+Provide a simple user acceptance checklist for me and my three members.
+
+## 18. Delivery
+
+Deliver:
+- Complete source code.
+- Working web frontend and backend.
+- Android source project.
+- Test APK if successfully built.
+- Database migrations and editable responsibility seed data.
+- Local deployment configuration.
+- Example environment settings.
+- Beginner-friendly installation/start/stop/update instructions.
+- Phone connection and HTTPS instructions.
+- AI setup and hardware requirements.
+- Backup and restore instructions.
+- Test results and known limitations.
+- A feature completion checklist.
+- A short guide for extending the system.
+
+Use a convenient one-command deployment where feasible, with a practical Windows-host guide as well.
+
+Keep a clear distinction between a runnable local application, a deployed server, and a device-tested Android app.
+
+Start by inspecting the workspace, selecting the architecture, and implementing the shared backend plus the first end-to-end workflow: manager assignment → member update with photo → live dashboard → manager review. Then continue through the remaining requirements.
